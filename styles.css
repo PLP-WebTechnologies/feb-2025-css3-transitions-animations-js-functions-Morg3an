@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding-top: 50px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #222;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  transition: transform 0.3s;
+}
+
+/* Button hover animation */
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Image animation triggered by JavaScript */
+img.animate {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
